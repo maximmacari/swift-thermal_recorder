@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:app/thermal_recorder.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:modules/swift-ios_thermal_sdk">
+   </FileRef>
+   <FileRef
+      location = "group:modules/swift-sensor_recording_utils">
+   </FileRef>
+   <FileRef
+      location = "group:modules/swift-thermal_camera">
+   </FileRef>
+   <FileRef
+      location = "group:COPYING">
+   </FileRef>
+   <FileRef
+      location = "group:CREDITS">
+   </FileRef>
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
+</Workspace>

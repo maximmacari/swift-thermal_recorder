@@ -1,0 +1,12 @@
+[submodule "modules/swift-sensor_recording_utils"]
+	path = modules/swift-sensor_recording_utils
+	url = git@github.com:maurovm/swift-sensor_recording_utils.git
+	branch = master
+[submodule "modules/swift-ios_thermal_sdk"]
+	path = modules/swift-ios_thermal_sdk
+	url = git@github.com:maurovm/swift-ios_thermal_sdk.git
+	branch = master
+[submodule "modules/swift-thermal_camera"]
+	path = modules/swift-thermal_camera
+	url = git@github.com:maurovm/swift-thermal_camera.git
+	branch = master
