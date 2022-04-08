@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>StringsTable</key>
+	<string>Root</string>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Application</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTitleValueSpecifier</string>
+			<key>Title</key>
+			<string>Version</string>
+			<key>Key</key>
+			<string>app_version</string>
+			<key>DefaultValue</key>
+			<string>0.0.0</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Global settings</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Connection timeout</string>
+			<key>Key</key>
+			<string>app_connection_timeout</string>
+			<key>DefaultValue</key>
+			<integer>300</integer>
+			<key>Titles</key>
+			<array>
+				<string>30 minutes</string>
+				<string>5 minutes</string>
+				<string>2 minutes</string>
+				<string>1 minute</string>
+				<string>30 seconds</string>
+				<string>15 seconds</string>
+				<string>10 seconds</string>
+				<string>5 seconds</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<integer>1800</integer>
+				<integer>300</integer>
+				<integer>120</integer>
+				<integer>60</integer>
+				<integer>30</integer>
+				<integer>15</integer>
+				<integer>10</integer>
+				<integer>5</integer>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Maximum temperature</string>
+			<key>Key</key>
+			<string>app_maximum_thermal_state</string>
+			<key>DefaultValue</key>
+			<string>Nominal</string>
+			<key>Titles</key>
+			<array>
+				<string>Nominal</string>
+				<string>Fair</string>
+				<string>Serious</string>
+				<string>Critical</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>Nominal</string>
+				<string>Fair</string>
+				<string>Serious</string>
+				<string>Critical</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Minimum battery percentage</string>
+			<key>Key</key>
+			<string>app_minimum_battery_percentage</string>
+			<key>DefaultValue</key>
+			<integer>40</integer>
+			<key>Titles</key>
+			<array>
+				<string>70%</string>
+				<string>60%</string>
+				<string>50%</string>
+				<string>40%</string>
+				<string>25%</string>
+				<string>5%</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<integer>70</integer>
+				<integer>60</integer>
+				<integer>50</integer>
+				<integer>40</integer>
+				<integer>25</integer>
+				<integer>5</integer>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Search thermal camera when app starts</string>
+			<key>Key</key>
+			<string>app_search_thermal_on_app_start</string>
+			<key>DefaultValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Thermal camera configuration</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Record video</string>
+			<key>Key</key>
+			<string>thermal_recording_enabled</string>
+			<key>DefaultValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Display video</string>
+			<key>Key</key>
+			<string>thermal_display_enabled</string>
+			<key>DefaultValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Display image statistics</string>
+			<key>Key</key>
+			<string>thermal_display_image_statistics</string>
+			<key>DefaultValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Report image statistics every</string>
+			<key>Key</key>
+			<string>thermal_statistics_reporting_interval</string>
+			<key>DefaultValue</key>
+			<integer>1</integer>
+			<key>Titles</key>
+			<array>
+				<string>2  seconds</string>
+				<string>1  second</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<integer>2</integer>
+				<integer>1</integer>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Average image statistics over</string>
+			<key>Key</key>
+			<string>thermal_statistics_buffer_size</string>
+			<key>DefaultValue</key>
+			<integer>1</integer>
+			<key>Titles</key>
+			<array>
+				<string>5  seconds</string>
+				<string>2  seconds</string>
+				<string>1  seconds</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<integer>5</integer>
+				<integer>2</integer>
+				<integer>1</integer>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Frame rate</string>
+			<key>Key</key>
+			<string>thermal_frame_rate</string>
+			<key>DefaultValue</key>
+			<integer>9</integer>
+			<key>Titles</key>
+			<array>
+				<string>9  FPS</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<integer>9</integer>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Camera position</string>
+			<key>Key</key>
+			<string>thermal_camera_position</string>
+			<key>DefaultValue</key>
+			<string>back</string>
+			<key>Titles</key>
+			<array>
+				<string>Front camera</string>
+				<string>Back camera</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>front</string>
+				<string>back</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Recording fusion mode</string>
+			<key>Key</key>
+			<string>thermal_recording_fusion_mode</string>
+			<key>DefaultValue</key>
+			<string>Visual_mode</string>
+			<key>Titles</key>
+			<array>
+				<string>IR_MODE</string>
+				<string>VISUAL_MODE</string>
+				<string>FUSION_PIP_MODE</string>
+				<string>FUSION_THERMAL_MODE</string>
+				<string>FUSION_MSX_MODE</string>
+				<string>FUSION_BLENDING_MODE</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>IR_mode</string>
+				<string>Visual_mode</string>
+				<string>Fusion_PIP_mode</string>
+				<string>Fusion_thermal_mode</string>
+				<string>Fusion_MSX_mode</string>
+				<string>Fusion_blending_mode</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Display fusion mode</string>
+			<key>Key</key>
+			<string>thermal_display_fusion_mode</string>
+			<key>DefaultValue</key>
+			<string>IR_mode</string>
+			<key>Titles</key>
+			<array>
+				<string>IR_MODE</string>
+				<string>VISUAL_MODE</string>
+				<string>FUSION_PIP_MODE</string>
+				<string>FUSION_THERMAL_MODE</string>
+				<string>FUSION_MSX_MODE</string>
+				<string>FUSION_BLENDING_MODE</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>IR_mode</string>
+				<string>Visual_mode</string>
+				<string>Fusion_PIP_mode</string>
+				<string>Fusion_thermal_mode</string>
+				<string>Fusion_MSX_mode</string>
+				<string>Fusion_blending_mode</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
