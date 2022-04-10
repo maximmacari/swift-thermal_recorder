@@ -34,9 +34,6 @@ struct Participant_view: View
                         preview_mode          : .scale_to_fill
                     )
             }
-            action_buttons:
-            {
-            }
             .hide_navigation_interface()
         
     }

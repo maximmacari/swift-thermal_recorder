@@ -169,6 +169,9 @@ final class Participant_model: Participant_entry_model
     
     public func stop_thermal_camera_watchdog()
     {
+        print("stop_thermal_camera_watchdog : ")
+        
+        thermal_camera_monitor?.stop()
         
         for subscription in thermal_camera_event_subscriptions
         {
@@ -180,8 +183,6 @@ final class Participant_model: Participant_entry_model
         new_thermal_battery_state(nil)
         new_thermal_battery_percentage(nil)
         system_message = nil
-        
-        thermal_camera_monitor?.stop()
         
     }
     

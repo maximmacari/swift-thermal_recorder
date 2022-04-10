@@ -11,6 +11,7 @@
  */
 
 import SwiftUI
+import UIKit
 import SensorRecordingUtils
 import ThermalCamera
 
@@ -21,7 +22,7 @@ struct Application_recording_view: View
     var body: some View
     {
         
-        Group
+        VStack
         {
             
             if let manager = session.all_cameras.first as? ThermalCamera.Recording_manager
