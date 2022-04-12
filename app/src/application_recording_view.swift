@@ -25,11 +25,11 @@ struct Application_recording_view: View
         VStack
         {
             
-            if let manager = session.all_cameras.first as? ThermalCamera.Recording_manager
+            if let manager = session.all_video_cameras.first as? ThermalCamera.Recording_manager
             {
                 Recording_session_view(
                         model         : session,
-                        video_content : Thermal_camera_view(manager)
+                        video_content : { Thermal_camera_view(manager) }
                     )
             }
             else

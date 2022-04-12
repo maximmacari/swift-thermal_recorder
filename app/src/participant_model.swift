@@ -31,19 +31,6 @@ final class Participant_model: Participant_entry_model
     }
     
     
-    deinit
-    {
-        
-        Task
-        {
-            [weak self] in
-            
-            await self?.deinit_thermal_camera_watchdog()
-        }
-        
-    }
-    
-    
     // MARK: - Public interface to responde system events
     
     
@@ -77,12 +64,16 @@ final class Participant_model: Participant_entry_model
      * Verify all the information required is valid before start recoding
      * data
      */
-    override func is_configuration_valid() async -> Bool
+    override func is_configuration_valid() async -> Result<Void, Setup_error>
     {
-                
-        if await super.is_configuration_valid() == false
+
+        switch await super.is_configuration_valid()
         {
-            return false
+            case .success():
+                break
+                
+            case .failure(let error):
+                return .failure(error)
         }
 
         
@@ -93,15 +84,14 @@ final class Participant_model: Participant_entry_model
               camera.is_connected
             else
             {
-                setup_error = .no_thermal_camera_access
-                return false
+                return .failure(.no_thermal_camera_access)
             }
 
         
         cancel_system_event_subscriptions()
         deinit_thermal_camera_watchdog()
         
-        return true
+        return .success( () )
         
     }
     
@@ -169,8 +159,7 @@ final class Participant_model: Participant_entry_model
     
     public func stop_thermal_camera_watchdog()
     {
-        print("stop_thermal_camera_watchdog : ")
-        
+                
         thermal_camera_monitor?.stop()
         
         for subscription in thermal_camera_event_subscriptions
@@ -190,7 +179,6 @@ final class Participant_model: Participant_entry_model
     public func deinit_thermal_camera_watchdog()
     {
         
-        stop_thermal_camera_watchdog()
         thermal_camera_monitor = nil
         
     }
