@@ -19,7 +19,7 @@ ThermalRecorder is an iOS application written in Swift. This repository only has
 - [swift-thermal_camera](https://github.com/maurovm/swift-thermal_camera): The main module that has all the functionality to connect and record data from thermal cameras. 
 - [swift-ios_thermal_sdk](https://github.com/maurovm/swift-ios_thermal_sdk): A Swift Package wrapping the multi-plaftform XCFrameworks for FLIR Mobile SDK.
 
-Example of other applications making use of the above Swift Packages are:
+Examples of other applications making use of the above Swift Packages are:
 
 - [swift-pulse_ox_recorder](https://github.com/maurovm/swift-pulse_ox_recorder): Application to record time-series data from devices that support Bluetooth Low Energy (BLE) protocol, such as heart rate monitors and pulse oximeters.
 - [swift-waveform_plotter_example](https://github.com/maurovm/swift-waveform_plotter_example): Example application to plot time-series data.
