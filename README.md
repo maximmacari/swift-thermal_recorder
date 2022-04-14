@@ -3,10 +3,16 @@
 This application records video from thermal cameras such as the FLIR one
 Pro-series.
 
+---
+
 ThermalRecorder is free software: you can redistribute it or modify it under 
 the terms of the GNU General Public License as published by the Free Software 
 Foundation, version 2 only. Please check the file [COPYING](COPYING) for more 
 information on the license and copyright.
+
+If you want to submit pull requests or contribute source code to this 
+repository, please read the [CONTRIBUTING.md](CONTRIBUTING.md) for
+more information about contributing guidelines.
 
 If you use this app in your projects and publish the results, please cite the 
 following manuscript:
@@ -17,7 +23,7 @@ physiological data acquisition". arXiv (In preparation). 2022
 ---
 
 ThermalRecorder is an iOS application written in Swift. This repository only
-has the a minimum set of UI classes and configuraton settings (XCode files, 
+has the minimum set of UI classes and configuration settings (XCode files, 
 Settings.bundle, etc) to launch the recording interface. The main functionality
 to connect, record and display data is provided by the following Swift Packages:
 
@@ -126,9 +132,9 @@ temperature and other image statistics.
 at the requested time interval.
 - **Average image statistics over**: Compute image statistics as average over 
 a time interval.
-- **Frame rate**: The rate to record video data. Note tha not all cameras 
+- **Frame rate**: The rate to record video data. Note that not all cameras 
 support this setting.
-- **Camera position**: This settings tries to mimic the position of the iOS 
+- **Camera position**: This setting tries to mimic the position of the iOS 
 native camera. Is the camera lens pointing to the Front (as a selfie camera), 
 or to the back (as pointing away from you).
 - **Recording fusion mode**: The FUSION mode used to record the video data to 
